@@ -1,0 +1,372 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oxygen);
+
+/* Page layout */
+
+body {
+    background:url("images/homepage.JPG");
+    margin: 0;
+    padding: 0;
+    font-family: 'Oxygen', sans-serif;
+    
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 300;
+}
+
+header {
+    margin: 0;
+    background: #000;
+    height: 65px;
+    padding: 1px;
+}
+#rm{
+  color:red;
+}
+article {
+    margin: 40px 30px;
+}
+
+h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-size: 2.3em;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 900;
+    margin: 0;
+    padding: 10px 0 0 30px;
+    letter-spacing: 2px;
+}
+
+h2 { margin: 20px 0 10px 0;
+    font-weight: 900;
+}
+
+p {
+    margin: 20px 0 5px 0;
+}
+
+
+/* Table Layout */
+
+
+.filtersel {
+margin-left: 10px;
+padding:0;
+height:40px;
+width:150px;
+border-color: black;
+border-width: 2px;
+border-radius: 8px;
+font-family: "Times new roman" ,serif;
+color:black;
+font-size: 18px;
+
+}
+
+.filtersel option{
+
+font-family: "Arial" ,serif;
+color:grey;
+font-weight: bold;
+font-size: 20px;
+
+}
+
+.btsel{
+
+ font-family: "Arial" ,serif;
+color:white;
+font-size: 20px;
+  height:40px;
+  background-color: grey;
+border-color: black;
+border-width: 1px;
+border-radius: 8px;
+}
+
+.ragtable th,td{
+  border: 1px solid white;
+  border-collapse: collapse;
+  border-radius: 5px; 
+
+}
+
+
+
+th,td {
+  padding: 10px;
+  text-align: center;
+}
+th {
+  color:white;
+  background-color: #1a0000;
+}
+td{
+  color: black;
+}
+tr:nth-child(even){
+  background-color:#ffe6e6;
+  opacity: 0.85;
+}
+tr:nth-child(odd){
+  background-color:white;
+  opacity:0.85;
+}
+.tablediv {
+  position: absolute;
+  overflow: scroll;
+  margin-left:120px ;
+  max-height:400px;
+}
+
+.addbtn{
+  font-size: 18px; 
+  border: none;
+  outline: none;
+  text-align:center;
+  font-weight: bolder;
+  color: white;
+  padding: 12px 16px;
+  background-color: #B1A1A1;
+  font-family: arial; /* Important for vertical align on mobile phones */
+  margin: 0; 
+}
+
+.addbtn:hover {
+  background-color: gray;
+}
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  margin-top: 2px;
+  color: white;
+  opacity: 0.8;
+  
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  margin-left: 530px;
+  margin-right: 530px;
+  margin-bottom: 30px;
+  
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  
+}
+
+
+
+.btn1 {
+  color: green;
+  opacity:0.8;
+  font-weight: bold;
+}
+
+/* Add a red background color to the cancel button */
+ .btn2 {
+  color: red;
+  opacity:0.8;
+  font-weight: bold;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn1:hover {
+  opacity: 1;
+}
+
+.btn2:hover {
+  opacity: 1;
+}
+/* Navbar container */
+.navbar {
+  margin:2px;
+  /*overflow: hidden;*/
+  background-color: black;
+  font-family: Arial;
+}
+
+#addform , #editform{
+margin-right: 450px;
+margin-top:50px;
+margin-bottom: 100px;
+
+
+
+}
+
+
+/* Links inside the navbar */
+.navbar #x {
+     float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar #x:hover{
+  background-color: red;
+}
+
+
+.container
+{
+
+margin-left: 20px;
+margin-right: 20px;
+padding-right: 10px;
+padding-left: 10px;
+width:1300;
+
+
+}
+
+.btn-primary{
+
+    width: 90px; 
+     font-color:white; 
+     padding:0px;
+    margin-top:0px; 
+    margin-left:0px;
+    background-color: black;
+    font-family: Arial; 
+    font-size: 16px;
+     height:100%;
+     border:0px;
+
+}
+
+.dropdown{
+align-content: center;
+margin-right:  0px;
+margin-left: auto;
+width:100px;
+height:50px;
+font-size:20px;
+
+}
+
+.ord{
+
+ background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    height:40px;
+    width:80px;
+    font-size: 20px;
+    
+    font-family: "Times New Roman", serif;
+    font-weight: bolder;
+    border-radius: 8px;
+
+
+}
+
+.card {
+    align-content: center;
+    width:200px;
+    background-color: rgba(214, 224, 226, 0.2);
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.card.hovercard {
+    position: relative;
+    padding-top: 0px;
+    margin-top: 0px;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(214, 224, 226, 0.2);
+}
+
+.card.hovercard .cardheader {
+   background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtLAtEWOqXSZarfk-Cnu1LakEmCULVLAdWphENb2gYOl-cMzGL9Q");
+    background-size: cover;
+    padding:0px;
+    height: 135px;
+}
+
+.card.hovercard .avatar {
+    position: relative;
+    padding:0px;
+    top: -50px;
+    margin-bottom: -50px;
+}
+
+.card.hovercard .avatar img {
+    width: 120px;
+    height: 120px;
+    
+    padding-top: 1px;
+    
+    -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+
+    border-radius: 50%;
+    
+}
+
+.card.hovercard .avatar img:hover {
+  width: 160px;
+  height: 160px;
+}
+
+.card.hovercard .info {
+    padding: 4px 8px 10px;
+}
+
+.card.hovercard .info .title {
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 1;
+    color: #262626;
+    vertical-align: middle;
+}
+
+.card.hovercard .info .desc {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+
+.card.hovercard .bottom {
+    padding: 0 0px;
+    margin-bottom: 17px;
+}
+
+
+
+
+
+.btn{ border-radius: 50%; width:32px; height:32px; line-height:18px;  }
+
+.foo {
+  background-color: black;
+  color: white;
+  width:100%;
+  
+    font-family: arial;
+    font-size: 18px;
+    margin-top:50px; 
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+

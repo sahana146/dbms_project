@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="firststyles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title>ewaste_manage</title>
+</head>
+<body>
+  <div>
+    <div class="navbar">
+  <a href="homepage.html">About Us</a>
+  <a href="first.html">Home</a>
+  </div> 
+</div>
+<!-- Use any element to open the sidenav -->
+<button class="btn" onclick="openNav()">SIGN UP/LOGIN</button>
+  <!-- Slideshow container -->
+  
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    
+    <img src="images/dbms1.jpg" style="width:100%">
+  
+  </div>
+
+  <div class="mySlides fade">
+   
+    <img src="images/dbms4.jpg" style="width:100%">
+    
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="images/dbms3.jpg" style="width:100%">
+   
+  </div>
+
+</div>
+<br>
+
+
+<!--image slider javascript-->
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <br>
+    <form action="signupnew.php" class="inline">
+  <button class="xbtn"><pre>NewUser?signup</pre></button>
+    </form>
+     <form action="loginnew.php" class="inline">
+  <button class="xbtn" type=submit>Login</button>
+ <input type=text name="counter" value=0 style="display:none;">
+     </form>
+ 
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+display("phone:9620320599  mail:wm123@gmail.com");
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+<!--sidenav javascript-->
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "275px";
+    document.getElementById("main").style.marginLeft = "275px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+}
+
+</script>
+ <footer class="foo">
+        <h5><strong><br>All Rights Reserved <br> &copy;WM</strong></h5>
+    </footer>
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+</body>
+</html>
